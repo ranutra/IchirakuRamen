@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ICHIRAKU RAMEN</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../css/ramen.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="../index.html" class="navbar-logo"
+        >ICHIRAKU<br /><span>RAMEN</span></a
+      >
+
+      <div class="navbar-nav">
+        <a href="../index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="promo.html">Promotion</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2 class="heading"><span>Contact</span> Us</h2>
+
+      <div class="row">
+        <form id="form" action="">
+          <!-- Input box start -->
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" id="name" placeholder="Name" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" id="email" placeholder="E-mail" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" id="phone" placeholder="Phone Number" />
+          </div>
+          <!-- Input box end -->
+
+          <!-- Ramen type start -->
+          <div class="ramen-details">
+            <span class="ramen-title">Ramen type</span>
+            <div class="category">
+              <input type="radio" name="ramen" id="dot-1" />
+              <label for="dot-1">
+                <span class="dot one"></span>
+                <span class="ramen-type">Regular</span>
+              </label>
+              <label for="dot-2">
+                <input type="radio" name="ramen" id="dot-2" />
+                <span class="dot two"></span>
+                <span class="ramen-type">Dry Ramen</span>
+              </label>
+            </div>
+          </div>
+          <!-- Ramen type end -->
+
+          <!-- Agree newsletter start -->
+          <div class="newsletter">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree">I agree to receive newsletter</label>
+          </div>
+          <!-- Agree newsletter end -->
+
+          <h4 id="error" style="color: rgb(210, 19, 19)"></h4>
+        </form>
+        <button type="submit" class="btn" onclick="submit()">
+          <i data-feather="chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="credit">
+        <p>
+          Created by <span>Nicholas Ryan Putra Setiawan</span>. | &copy; 2023.
+        </p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="../js/ramen.js"></script>
+  </body>
+</html>
